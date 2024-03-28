@@ -29,7 +29,6 @@ public class Quiz {
 
 
     /**
-     *
      * you may need to make it list questions and answers and use another entity
      * or make it byte array and use blob storage to store image or pdf or else
      * or store some metadata about the quiz or quiz grades
