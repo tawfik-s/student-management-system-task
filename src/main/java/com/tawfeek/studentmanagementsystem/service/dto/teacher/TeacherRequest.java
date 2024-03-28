@@ -1,22 +1,16 @@
-package com.tawfeek.studentmanagementsystem.entity;
+package com.tawfeek.studentmanagementsystem.service.dto.teacher;
 
-
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Teacher {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private Long id;
+public class TeacherRequest {
 
     private String name;
 
