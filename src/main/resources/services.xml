@@ -4,21 +4,30 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="courseServiceImpl" class="com.tawfeek.studentmanagementsystem.service.CourseServiceImpl">
+    <bean id="courseService" class="com.tawfeek.studentmanagementsystem.service.CourseServiceImpl">
         <property name="courseRepo" ref="courseRepo"/>
         <property name="studentRepo" ref="studentRepo"/>
         <property name="teacherRepo" ref="teacherRepo"/>
     </bean>
 
 
+    <bean id="quizService" class="com.tawfeek.studentmanagementsystem.service.QuizServiceImpl">
+        <property name="quizRepo" ref="quizRepo"/>
+        <property name="courseRepo" ref="courseRepo"/>
+        <property name="quizMapper" ref="quizMapper"/>
+    </bean>
 
-    <!--    repositories-->
+    <bean id="studentService" class="com.tawfeek.studentmanagementsystem.service.StudentServiceImpl">
+        <property name="studentRepo" ref="studentRepo"/>
+        <property name="studentMapper" ref="studentMapper"/>
+    </bean>
 
-    <!--    mappers-->
+    <bean id="teacherService" class="com.tawfeek.studentmanagementsystem.service.TeacherServiceImpl">
+        <property name="teacherMapper" ref="teacherMapper"/>
+        <property name="teacherRepo" ref="teacherRepo"/>
+    </bean>
 
-    <!--    services-->
 
-    <!--    controllers-->
 
 
 </beans>

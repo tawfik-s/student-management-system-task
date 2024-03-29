@@ -5,7 +5,6 @@ import com.tawfeek.studentmanagementsystem.service.dto.teacher.TeacherRequest;
 import org.springframework.stereotype.Component;
 
 
-@Component
 public class TeacherMapper {
 
     public Teacher toEntity(TeacherRequest teacherRequest){

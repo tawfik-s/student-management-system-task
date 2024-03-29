@@ -53,8 +53,8 @@
     <jpa:repositories base-package="com.tawfeek.studentmanagementsystem.repository"/>
 
 
+    <import resource="mappers.xml"/>
     <import resource="services.xml"/>
-
 
 
 </beans>
