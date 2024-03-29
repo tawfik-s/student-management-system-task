@@ -9,14 +9,20 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-@Service
 public class TeacherServiceImpl implements TeacherService {
 
-    @Autowired
     private TeacherRepo teacherRepo;
 
-    @Autowired
     private TeacherMapper teacherMapper;
+
+
+    public void setTeacherMapper(TeacherMapper teacherMapper) {
+        this.teacherMapper = teacherMapper;
+    }
+
+    public void setTeacherRepo(TeacherRepo teacherRepo) {
+        this.teacherRepo = teacherRepo;
+    }
 
     @Override
     public Teacher addTeacher(TeacherRequest teacherRequest) {

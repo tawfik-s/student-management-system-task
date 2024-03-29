@@ -12,17 +12,28 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-@Service
 public class CourseServiceImpl implements CourseService {
 
-    @Autowired
     private CourseRepo courseRepo;
 
-    @Autowired
     private StudentRepo studentRepo;
 
-    @Autowired
+
     private TeacherRepo teacherRepo;
+
+
+    public void setCourseRepo(CourseRepo courseRepo) {
+        this.courseRepo = courseRepo;
+    }
+
+    public void setStudentRepo(StudentRepo studentRepo) {
+        this.studentRepo = studentRepo;
+    }
+
+
+    public void setTeacherRepo(TeacherRepo teacherRepo) {
+        this.teacherRepo = teacherRepo;
+    }
 
     @Override
     public Course addCourse(CourseRequest courseRequest) {

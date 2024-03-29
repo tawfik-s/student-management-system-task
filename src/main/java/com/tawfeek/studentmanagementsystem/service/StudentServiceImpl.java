@@ -9,14 +9,19 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 public class StudentServiceImpl implements StudentService{
 
-    @Autowired
     private StudentRepo studentRepo;
 
-    @Autowired
     private StudentMapper studentMapper;
+
+    public void setStudentMapper(StudentMapper studentMapper) {
+        this.studentMapper = studentMapper;
+    }
+
+    public void setStudentRepo(StudentRepo studentRepo) {
+        this.studentRepo = studentRepo;
+    }
 
     @Override
     public Student addStudent(StudentRequest studentRequest) {

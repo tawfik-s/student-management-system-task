@@ -5,7 +5,6 @@ import com.tawfeek.studentmanagementsystem.service.dto.quiz.QuizRequest;
 import org.springframework.stereotype.Component;
 
 
-@Component
 public class QuizMapper {
 
     public Quiz toEntity(QuizRequest quizRequest){

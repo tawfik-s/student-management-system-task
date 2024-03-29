@@ -8,12 +8,17 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
 @RequestMapping("/api/teachers")
 public class TeacherController {
 
-    @Autowired
     private TeacherService teacherService;
+
+    @Autowired
+    public void setTeacherService(TeacherService teacherService) {
+        this.teacherService = teacherService;
+    }
 
     @PostMapping
     public ResponseEntity<Teacher> addTeacher(@RequestBody TeacherRequest teacherRequest) {

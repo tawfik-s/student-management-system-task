@@ -9,17 +9,25 @@ import com.tawfeek.studentmanagementsystem.service.mapper.QuizMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
 public class QuizServiceImpl implements QuizService {
 
-    @Autowired
     private QuizRepo quizRepo;
 
-    @Autowired
     private CourseRepo courseRepo;
 
-    @Autowired
     private QuizMapper quizMapper;
+
+    public void setCourseRepo(CourseRepo courseRepo) {
+        this.courseRepo = courseRepo;
+    }
+
+    public void setQuizMapper(QuizMapper quizMapper) {
+        this.quizMapper = quizMapper;
+    }
+
+    public void setQuizRepo(QuizRepo quizRepo) {
+        this.quizRepo = quizRepo;
+    }
 
     @Override
     public Quiz addQuiz(Long courseId, QuizRequest quizRequest) {
