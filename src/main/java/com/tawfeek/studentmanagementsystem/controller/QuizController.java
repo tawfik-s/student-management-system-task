@@ -12,8 +12,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/quizzes")
 public class QuizController {
 
-    @Autowired
     private QuizService quizService;
+
+    @Autowired
+    public void setQuizService(QuizService quizService) {
+        this.quizService = quizService;
+    }
 
     @PostMapping("/{courseId}")
     public ResponseEntity<Quiz> addQuiz(@PathVariable Long courseId, @RequestBody QuizRequest quizRequest) {

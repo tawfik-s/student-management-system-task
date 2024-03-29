@@ -13,7 +13,5 @@ public class StudentManagementSystemApplication {
     public static void main(String[] args) {
         SpringApplication.run(com.tawfeek.studentmanagementsystem.StudentManagementSystemApplication.class, args);
 
-//        ApplicationContext context=new ClassPathXmlApplicationContext("services.xml");
     }
-
 }

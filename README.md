@@ -3,7 +3,7 @@
 Develop a backend-only web application using Java Spring MVC to manage student, teacher,  quiz, and course data for the current semester. 
 
 
-<button href="http://localhost:8080/swagger-ui/index.html#">Swagger-UI</button>
+<a href="http://localhost:8080/swagger-ui/index.html#">Swagger-UI</a>
 
 `"http://localhost:8080/swagger-ui/index.html#` don't forget to change the port in the url if you modify it in the properties file
 

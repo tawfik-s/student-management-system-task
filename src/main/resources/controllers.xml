@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="courseController" class="com.tawfeek.studentmanagementsystem.controller.CourseController">
+        <property name="courseService" ref="courseService"/>
+    </bean>
+
+    <bean id="teacherController" class="com.tawfeek.studentmanagementsystem.controller.TeacherController">
+        <property name="teacherService" ref="teacherService"/>
+    </bean>
+
+    <bean id="studentController" class="com.tawfeek.studentmanagementsystem.controller.StudentController">
+        <property name="studentService" ref="studentService"/>
+    </bean>
+
+    <bean id="quizController" class="com.tawfeek.studentmanagementsystem.controller.QuizController">
+        <property name="quizService" ref="quizService"/>
+    </bean>
+
+</beans>
