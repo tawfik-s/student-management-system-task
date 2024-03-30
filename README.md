@@ -32,7 +32,8 @@ and available at my GitHub <a href="https://github.com/tawfik-s/classroom-api">C
 
 
 
-
+## Note 
+I can't find on the web how to configure springMVC REST using xml configuration I try to use configurations from the web, but it's not working, so I leave springBoot to scan RestController components, and it's work properly. all other beans is registered using xml configuration.
 
 
 ***
