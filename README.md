@@ -9,7 +9,7 @@ Develop a backend-only web application using Java Spring MVC to manage student, 
 
 ## Fully functional quiz API
 I built a fully functional quiz system last year it's open source 
-and now available at GitHub <a href="https://github.com/tawfik-s/classroom-api">Classroom-API-GitHub</a>
+and available at my GitHub <a href="https://github.com/tawfik-s/classroom-api">Classroom-API-GitHub</a>
 ***
 
 ## Evaluation criteria
