@@ -20,11 +20,15 @@
     <bean id="studentService" class="com.tawfeek.studentmanagementsystem.service.StudentServiceImpl">
         <property name="studentRepo" ref="studentRepo"/>
         <property name="studentMapper" ref="studentMapper"/>
+        <property name="courseRepo" ref="courseRepo"/>
+        <property name="courseMapper" ref="courseMapper"/>
     </bean>
 
     <bean id="teacherService" class="com.tawfeek.studentmanagementsystem.service.TeacherServiceImpl">
         <property name="teacherMapper" ref="teacherMapper"/>
         <property name="teacherRepo" ref="teacherRepo"/>
+        <property name="courseRepo" ref="courseRepo"/>
+        <property name="courseMapper" ref="courseMapper"/>
     </bean>
 
 

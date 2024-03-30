@@ -1,12 +1,16 @@
 package com.tawfeek.studentmanagementsystem.controller;
 
+import com.tawfeek.studentmanagementsystem.entity.Course;
 import com.tawfeek.studentmanagementsystem.entity.Teacher;
 import com.tawfeek.studentmanagementsystem.service.TeacherService;
+import com.tawfeek.studentmanagementsystem.service.dto.course.CourseResponse;
 import com.tawfeek.studentmanagementsystem.service.dto.teacher.TeacherRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 @RestController
@@ -42,5 +46,10 @@ public class TeacherController {
     public ResponseEntity<Teacher> getTeacherById(@PathVariable Long teacherId) {
         Teacher teacher = teacherService.getTeacherById(teacherId);
         return new ResponseEntity<>(teacher, HttpStatus.OK);
+    }
+
+    @GetMapping("/{teacherId}/courses")
+    public ResponseEntity<List<CourseResponse>> getTeacherCourses(@PathVariable long teacherId){
+        return new ResponseEntity<>(teacherService.getTeacherCourses(teacherId),HttpStatus.OK);
     }
 }

@@ -24,15 +24,15 @@ public class Course {
 
     //assumption each course contain one teacher
     //each teacher can teach in many courses
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.DETACH})
     private Teacher teacher;
 
     //assumption each student can enroll in many courses
     //and each course contain many students;
-    @ManyToMany
+    @ManyToMany(cascade = {CascadeType.DETACH})
     private List<Student> registeredStudents;
 
     //assumption each course contain many quizzes
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.DETACH})
     private List<Quiz> quizzes;
 }

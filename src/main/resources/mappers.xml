@@ -7,4 +7,5 @@
     <bean id="quizMapper" class="com.tawfeek.studentmanagementsystem.service.mapper.QuizMapper"/>
     <bean id="teacherMapper" class="com.tawfeek.studentmanagementsystem.service.mapper.TeacherMapper"/>
     <bean id="studentMapper" class="com.tawfeek.studentmanagementsystem.service.mapper.StudentMapper"/>
+    <bean id="courseMapper" class="com.tawfeek.studentmanagementsystem.service.mapper.CourseMapper"/>
 </beans>
